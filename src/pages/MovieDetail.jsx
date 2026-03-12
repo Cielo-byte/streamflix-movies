@@ -9,7 +9,7 @@ import Swal from 'sweetalert2'
 const MovieDetail = () => {
     const { id } = useParams()
     const navigate = useNavigate()
-    const { user, apiUrl, rentMovie, isLoading, rentals, fetchUserRentals } = useAppStore()  // ← Añadí fetchUserRentals
+    const { user, apiUrl, rentMovie, isLoading, rentals, fetchUserRentals } = useAppStore()
     const [movie, setMovie] = useState(null)
     const [loading, setLoading] = useState(true)
     const [isRented, setIsRented] = useState(false)
@@ -103,7 +103,7 @@ const MovieDetail = () => {
         return (
             <div className="flex flex-col items-center justify-center h-64">
                 <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-netflix-red"></div>
-                <p className="mt-4 text-gray-400">Cargando película...</p>
+                <p className="mt-4 text-gray-400">Cargando...</p>
             </div>
         )
     }
