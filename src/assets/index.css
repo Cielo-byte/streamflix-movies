@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+body{
+background:#141414;
+color:white;
+font-family:sans-serif;
+}

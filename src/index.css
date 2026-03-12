@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #141414;
+    color: white;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .container-custom {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
+
+:root {
+  --netflix-red: #E50914;
+  --netflix-black: #141414;
+  --netflix-dark: #181818;
+  --netflix-gray: #808080;
+}
+
+.bg-netflix-red { background-color: var(--netflix-red); }
+.bg-netflix-black { background-color: var(--netflix-black); }
+.bg-netflix-dark { background-color: var(--netflix-dark); }
+.text-netflix-red { color: var(--netflix-red); }
+.border-netflix-gray { border-color: var(--netflix-gray); }
